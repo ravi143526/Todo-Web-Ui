@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+.cst-main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+.cst-todo-header{
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    height: 50px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cst-heading2{
+    color: #00A5EC;
+    margin-left: 4px;
+}
+
+.cst-todo-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.cst-add-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    padding: 12px 45px;
+}
+
+.fa-plus-circle{
+    color: #00A5EC;
+}
+
+.cst-btn-text{
+    margin-left: 10px;
+}
+
+.cst-todo-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 140px;
+}
+
+.cst-todo-card-item{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 240px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 8px 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cst-todo-card-header{
+    padding: 18px 14px;
+    font-weight: bold;
+    color: #00A5EC;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+input[type=checkbox]:nth-child(1) {
+    accent-color: #C2C2C2;
+    opacity: 0.5;
+}
+
+.cst-checkbox-label{
+    color: #C2C2C2;
+    text-decoration: 2px line-through #C2C2C2;
+}
+
+.cst-todo-card-body{
+    padding: 12px 14px;
+}
+
+form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 2;
+}
+
+form label{
+    margin-left: 8px;
+}
+
+/*---- Pop up card CSS   --------*/
+
+.cst-notshow{
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.cst-popup-card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 180px;
+    top: 20%;
+    left: 36%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);   
+}
+
+.cst-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.cst-popup-header-text{
+    font-weight: bold;
+}
+
+.cst-popup-body{
+    padding: 20px;
+}
+
+.cst-popup-body input{
+    width: 315px;
+    height: 30px;
+    padding: 4px;
+    color: #A7A7A7;
+    background-color: #F7F7F7;
+    border: none;
+}
+
+.cst-popup-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.cst-popup-button div{
+    text-align: center;
+    background-color: #00A5EC;
+    color: white;
+    width: 120px;
+    padding: 8px;
+}
+
+.cst-popup-button .cst-head{
+    margin-left: 8px;
+}
+
+/*----- TaskList page2    -------*/
+
+.cst-todo-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.cst-back-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+}
+
+.cst-btn{
+    position: absolute;
+    padding: 4px;
+    bottom: 4px;
+    left: 50%;
+}
+
+.cst-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*---- Pop up card CSS   --------*/
+
+.cst-notshow{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.cst-popup-card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 180px;
+    top: 20%;
+    left: 36%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);   
+}
+
+.cst-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.cst-popup-header-text{
+    font-weight: bold;
+}
+
+.cst-popup-body{
+    padding: 20px;
+}
+
+.cst-popup-body input{
+    width: 315px;
+    height: 30px;
+    padding: 4px;
+    color: #A7A7A7;
+    background-color: #F7F7F7;
+    border: none;
+}
+
+.cst-popup-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.cst-popup-button div{
+    text-align: center;
+    background-color: #00A5EC;
+    color: white;
+    width: 120px;
+    padding: 8px;
+}
+
+.cst-popup-button .cst-head{
+    margin-left: 8px;
+}
+
+.body1{
+    justify-content: center;
+}
+
+/*-----  page3 Styling    -------*/
+
+.cst-todo-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.cst-back-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+}
